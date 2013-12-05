@@ -18,7 +18,7 @@
             "prototype": "montage/core/event/action-event-listener",
             "properties": {
                 "action": "addContent",
-                "handler": {"@": "rangeController1"}
+                "handler": {"@": "tasksController"}
             },
             "_dev": {
                 "isHidden": true
@@ -56,11 +56,8 @@
             "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
-                "contentController": {"@": "rangeController1"}
+                "contentController": {"@": "tasksController"}
             }
-        },
-        "rangeController1": {
-            "prototype": "montage/core/range-controller"
         },
         "task1": {
             "prototype": "ui/task.reel",
@@ -70,6 +67,9 @@
             "bindings": {
                 "task": {"<-": "@list1.objectAtCurrentIteration"}
             }
+        },
+        "tasksController": {
+            "prototype": "montage/core/range-controller"
         },
         "title1": {
             "prototype": "digit/ui/title.reel",
