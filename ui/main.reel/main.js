@@ -20,8 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var tasksController = this.templateObjects.tasksController,
             	completedTasks = tasksController.getPath("content.filter{completed}");
             
-			console.log("completed", completedTasks);
-            
+            tasksController.deleteEach(completedTasks);
         }
     }
 });
