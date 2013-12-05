@@ -9,6 +9,9 @@
             "prototype": "ui/task.reel",
             "properties": {
                 "element": {"#": "task"}
+            },
+            "bindings": {
+                "classList.has('completed')": {"<-": "task.completed"}
             }
         },
         "checkbox1": {
