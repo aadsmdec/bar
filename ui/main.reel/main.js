@@ -17,7 +17,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleClearCompletedButtonAction: {
         value: function () {
-            conssole.log("clear em");
+            var completedTasks = this.templateObjects.tasksController.getPath("content.filter{completed});
+			console.log("completed", completedTasks);
         }
     }
 });
