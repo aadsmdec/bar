@@ -14,13 +14,29 @@
                 "element": {"#": "main"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "addContent",
+                "handler": {"@": "rangeController1"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "button1": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
                 "enabled": true,
                 "label": "Add Task"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
         },
         "list1": {
             "prototype": "digit/ui/list.reel",
