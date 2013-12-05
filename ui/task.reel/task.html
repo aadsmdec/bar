@@ -6,8 +6,29 @@
     <script type="text/montage-serialization">
     {
         "owner": {
+            "prototype": "ui/task.reel",
             "properties": {
                 "element": {"#": "task"}
+            }
+        },
+        "checkbox1": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            },
+            "bindings": {
+                "checked": {"<-": "@owner.task.completed"}
+            }
+        },
+        "textField1": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholder": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.task.title"}
             }
         }
     }
@@ -15,6 +36,8 @@
 </head>
 <body>
     <div data-montage-id="task" class="Task">
+        <input type="checkbox" data-montage-id="checkbox">
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
