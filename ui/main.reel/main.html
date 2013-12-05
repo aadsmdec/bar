@@ -46,6 +46,7 @@
                 "label": "Clear Completed"
             },
             "bindings": {
+                "enabled": {"<-": "!!@tasksController.organizedContent.filter{completed}.length"},
                 "label": {"<-": "'Clear ' + @tasksController.organizedContent.filter{completed}.length + ' Completed'"}
             },
             "listeners": [
