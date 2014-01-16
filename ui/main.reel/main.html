@@ -74,6 +74,15 @@
                 "contentController": {"@": "tasksController"}
             }
         },
+        "methodNameField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "methodNameField"},
+                "enabled": true,
+                "placeholder": "Text",
+                "value": "addContent"
+            }
+        },
         "task1": {
             "prototype": "ui/task.reel",
             "properties": {
@@ -85,13 +94,6 @@
         },
         "tasksController": {
             "prototype": "montage/core/range-controller"
-        },
-        "textField1": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholder": "Text"
-            }
         },
         "title1": {
             "prototype": "digit/ui/title.reel",
@@ -106,7 +108,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
-        <input data-montage-id="textField" type="text">
+        <input data-montage-id="methodNameField" type="text">
         <section>
             <button data-montage-id="button"></button>
             <button data-montage-id="object"></button>
