@@ -2,10 +2,10 @@
     "name": "bar",
     "version": "0.1.0",
     "dependencies": {
-        "montage": "~0.13.2",
         "digit": "~0.3.1",
         "matte": "*",
-        "glTF-webgl-viewer": "git+ssh://git@github.com:fabrobinet/glTF-webgl-viewer.git#d0edd306a72368ca01e1b7c639f32b6a948adc0a"
+        "glTF-webgl-viewer": "git+ssh://git@github.com:fabrobinet/glTF-webgl-viewer.git#d0edd306a72368ca01e1b7c639f32b6a948adc0a",
+        "montage": "~0.13.2"
     },
     "devDependencies": {
         "montage-testing": "0.2.0"
