@@ -14,6 +14,14 @@
                 "classList.has('completed')": {"<-": "task.completed"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
         "checkbox1": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
@@ -22,6 +30,17 @@
             },
             "bindings": {
                 "checked": {"<->": "@owner.task.completed"}
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
             }
         },
         "textField1": {
@@ -40,6 +59,12 @@
 <body>
     <div data-montage-id="task" class="Task">
         <input type="checkbox" data-montage-id="checkbox">
+        <ul data-montage-id="repetition">
+            <li>
+                Item
+                <button data-montage-id="button"></button>
+            </li>
+        </ul>
         <input data-montage-id="textField" type="text">
     </div>
 </body>
