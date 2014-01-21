@@ -1,6 +1,6 @@
 {
   "blueprint_component_reference": {
-    "prototype": "montage/core/meta/blueprint-reference",
+    "prototype": "digit/montage/core/meta/blueprint-reference",
     "properties": {
       "valueReference": {
         "blueprintName": "Component",
@@ -11,7 +11,7 @@
     }
   },
   "root": {
-    "prototype": "montage/core/meta/module-blueprint",
+    "prototype": "digit/montage/core/meta/module-blueprint",
     "properties": {
       "name": null,
       "blueprintModule": {
